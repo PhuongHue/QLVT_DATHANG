@@ -103,6 +103,7 @@
             this.LoginUserTextBox.Name = "LoginUserTextBox";
             this.LoginUserTextBox.Size = new System.Drawing.Size(199, 21);
             this.LoginUserTextBox.TabIndex = 5;
+            this.LoginUserTextBox.Text = "tranthanh";
             // 
             // LoginPasswordTextBox
             // 
@@ -111,6 +112,7 @@
             this.LoginPasswordTextBox.PasswordChar = '*';
             this.LoginPasswordTextBox.Size = new System.Drawing.Size(199, 21);
             this.LoginPasswordTextBox.TabIndex = 6;
+            this.LoginPasswordTextBox.Text = "123";
             // 
             // LoginButton
             // 
@@ -135,6 +137,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.v_DSPMComboBox);
             this.Name = "FormDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangNhap";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qLVT_MASTER)).EndInit();

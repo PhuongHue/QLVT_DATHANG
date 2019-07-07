@@ -33,5 +33,16 @@ namespace QLVT_DATHANG.Properties {
                 return ((string)(this["QLVT_DATHANGConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-17735P0\\PH_02;Initial Catalog=QLVT_DATHANG;User ID=sa;Passwor" +
+            "d=123")]
+        public string QLVT_PHANMANH {
+            get {
+                return ((string)(this["QLVT_PHANMANH"]));
+            }
+        }
     }
 }
