@@ -34,16 +34,21 @@
             this.tSLableNhom = new System.Windows.Forms.ToolStripStatusLabel();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.componentNV3 = new QLVT_DATHANG.ComponentNV();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.componentVatTu1 = new QLVT_DATHANG.Component.ComponentVatTu();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             this.chiNhanhTableAdapter1 = new QLVT_DATHANG.QLVT_MASTERTableAdapters.ChiNhanhTableAdapter();
-            this.componentNV2 = new QLVT_DATHANG.ComponentNV();
+            this.phieuNhapTableAdapter1 = new QLVT_DATHANG.QLVT_MASTERTableAdapters.PhieuNhapTableAdapter();
+            this.ctpxTableAdapter1 = new QLVT_DATHANG.QLVT_MASTERTableAdapters.CTPXTableAdapter();
+            this.ctpnTableAdapter1 = new QLVT_DATHANG.QLVT_MASTERTableAdapters.CTPNTableAdapter();
+            this.xtraUserControl11 = new QLVT_DATHANG.Component.XtraUserControl1();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
+            this.xtraTabPage3.SuspendLayout();
+            this.xtraTabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -89,7 +94,7 @@
             this.xtraTabControl1.AppearancePage.Header.Options.UseFont = true;
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage2;
             this.xtraTabControl1.Size = new System.Drawing.Size(1046, 554);
@@ -97,58 +102,73 @@
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage2,
             this.xtraTabPage3,
-            this.xtraTabPage4,
-            this.xtraTabPage5,
-            this.xtraTabPage6});
+            this.xtraTabPage4});
             // 
             // xtraTabPage2
             // 
-            this.xtraTabPage2.Controls.Add(this.componentNV2);
-            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabPage2.Controls.Add(this.componentNV3);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1040, 520);
             this.xtraTabPage2.Text = "Nhân viên";
             // 
+            // componentNV3
+            // 
+            this.componentNV3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.componentNV3.Location = new System.Drawing.Point(0, 0);
+            this.componentNV3.Name = "componentNV3";
+            this.componentNV3.Size = new System.Drawing.Size(1040, 520);
+            this.componentNV3.TabIndex = 0;
+            // 
             // xtraTabPage3
             // 
-            this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabPage3.Controls.Add(this.componentVatTu1);
+            this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1040, 526);
-            this.xtraTabPage3.Text = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(1040, 520);
+            this.xtraTabPage3.Text = "Vật tư";
+            this.xtraTabPage3.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage3_Paint);
+            // 
+            // componentVatTu1
+            // 
+            this.componentVatTu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.componentVatTu1.Location = new System.Drawing.Point(0, 0);
+            this.componentVatTu1.Name = "componentVatTu1";
+            this.componentVatTu1.Size = new System.Drawing.Size(1040, 520);
+            this.componentVatTu1.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
-            this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabPage4.Controls.Add(this.xtraUserControl11);
+            this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1040, 526);
-            this.xtraTabPage4.Text = "xtraTabPage4";
-            // 
-            // xtraTabPage5
-            // 
-            this.xtraTabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(1040, 526);
-            this.xtraTabPage5.Text = "xtraTabPage5";
-            // 
-            // xtraTabPage6
-            // 
-            this.xtraTabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(1040, 526);
-            this.xtraTabPage6.Text = "xtraTabPage6";
+            this.xtraTabPage4.Size = new System.Drawing.Size(1040, 520);
+            this.xtraTabPage4.Text = "DS Kho";
+            this.xtraTabPage4.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
             // 
             // chiNhanhTableAdapter1
             // 
             this.chiNhanhTableAdapter1.ClearBeforeFill = true;
             // 
-            // componentNV2
+            // phieuNhapTableAdapter1
             // 
-            this.componentNV2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.componentNV2.Location = new System.Drawing.Point(0, 0);
-            this.componentNV2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.componentNV2.Name = "componentNV2";
-            this.componentNV2.Size = new System.Drawing.Size(1040, 520);
-            this.componentNV2.TabIndex = 0;
+            this.phieuNhapTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ctpxTableAdapter1
+            // 
+            this.ctpxTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ctpnTableAdapter1
+            // 
+            this.ctpnTableAdapter1.ClearBeforeFill = true;
+            // 
+            // xtraUserControl11
+            // 
+            this.xtraUserControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraUserControl11.Location = new System.Drawing.Point(0, 0);
+            this.xtraUserControl11.Name = "xtraUserControl11";
+            this.xtraUserControl11.Size = new System.Drawing.Size(1040, 520);
+            this.xtraUserControl11.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -159,7 +179,7 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -168,6 +188,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
+            this.xtraTabPage3.ResumeLayout(false);
+            this.xtraTabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,9 +206,13 @@
         private ComponentNV componentNV1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage5;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage6;
         private QLVT_MASTERTableAdapters.ChiNhanhTableAdapter chiNhanhTableAdapter1;
         private ComponentNV componentNV2;
+        private Component.ComponentVatTu componentVatTu1;
+        private ComponentNV componentNV3;
+        private QLVT_MASTERTableAdapters.PhieuNhapTableAdapter phieuNhapTableAdapter1;
+        private QLVT_MASTERTableAdapters.CTPXTableAdapter ctpxTableAdapter1;
+        private QLVT_MASTERTableAdapters.CTPNTableAdapter ctpnTableAdapter1;
+        private Component.XtraUserControl1 xtraUserControl11;
     }
 }

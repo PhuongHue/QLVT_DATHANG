@@ -26,5 +26,15 @@ namespace QLVT_DATHANG
 
             Init();
         }
+
+        private void xtraTabPage3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void xtraTabPage4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

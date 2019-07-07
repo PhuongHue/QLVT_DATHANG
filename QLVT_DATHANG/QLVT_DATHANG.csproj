@@ -61,6 +61,18 @@
     <Compile Include="Component\ComponentNV.Designer.cs">
       <DependentUpon>ComponentNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\ComponentVatTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ComponentVatTu.Designer.cs">
+      <DependentUpon>ComponentVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     </Compile>
     <EmbeddedResource Include="Component\ComponentNV.resx">
       <DependentUpon>ComponentNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ComponentVatTu.resx">
+      <DependentUpon>ComponentVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\XtraUserControl1.resx">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
